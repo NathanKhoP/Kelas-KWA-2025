@@ -1,10 +1,16 @@
 # Ephemeral Accountant
 
+`https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html`
+
 ![alt text](assets/ephemeral1.png)
+
+From previous challenges, we know the Users table structure:
 
 ```sql
 CREATE TABLE `Users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `username` VARCHAR(255) DEFAULT '', `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `role` VARCHAR(255) DEFAULT 'customer', `deluxeToken` VARCHAR(255) DEFAULT '', `lastLoginIp` VARCHAR(255) DEFAULT '0.0.0.0', `profileImage` VARCHAR(255) DEFAULT '/assets/public/images/uploads/default.svg', `totpSecret` VARCHAR(255) DEFAULT '', `isActive` TINYINT(1) DEFAULT 1, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `deletedAt` DATETIME)
 ```
+
+We can craft a UNION injection payload.
 
 **Payload**
 

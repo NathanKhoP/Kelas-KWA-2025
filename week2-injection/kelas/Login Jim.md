@@ -1,10 +1,16 @@
 # Login Jim
 
+`https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html`
+
+After scrolling through the catalogue, we found Jim's account.
+
+![alt text](assets/jim.png)
+
+We can make the other part of the query a comment with the following:
+
 ```sql
 ' --
 ```
-
-![alt text](assets/jim.png)
 
 ![alt text](assets/loginjim.png)
 

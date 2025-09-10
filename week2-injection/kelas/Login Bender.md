@@ -1,12 +1,20 @@
 # Login Bender
 
+`https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html`
+
+After scrolling through the catalogue, we found Bender's account.
+
+![alt text](assets/bender.png)
+
+We can make the other part of the query a comment with the following:
+
 ```sql
 ' --
 ```
 
-![alt text](assets/bender.png)
-
 ![alt text](assets/loginbender.png)
+
+That's it.
 
 ![alt text](assets/loginbender2.png)
 
